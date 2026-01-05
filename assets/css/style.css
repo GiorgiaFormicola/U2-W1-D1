@@ -83,8 +83,9 @@ h1 {
 article img {
   padding: 0.2rem;
   box-shadow: 0 0 0 4px #00a0c6, 0 0 0 8px #a02571;
-  width: 70px;
+  width: 4.5rem;
   box-sizing: border-box;
+  margin-left: 0.5rem;
 }
 
 p,
@@ -225,13 +226,12 @@ footer a {
     font-weight: normal;
   }
 
-  /* MAIN */
+  /* ELEMENTI NEL MAIN - ARTICLE */
+
   h1 {
     font-size: 3.6rem;
     line-height: 4.5rem;
   }
-
-  /* ELEMENTI NEL MAIN - ARTICLE */
   iframe {
     height: 180px;
   }
@@ -255,16 +255,81 @@ footer a {
 
   /* FOOTER */
   footer {
-    background: rgb(53, 53, 53);
-    background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
-    box-shadow: 0 3px 3px #444;
-    color: #f0f0f0;
-    padding: 1em;
-    text-align: center;
     font-size: 1.7rem;
   }
   footer a {
-    color: fuchsia;
     font-weight: normal;
+  }
+}
+
+/* TABLET STYLES */
+@media screen and (max-width: 768px) {
+  /* IMPOSTAZIONI GENERALI */
+  html {
+    font-size: 83%;
+  }
+  body {
+    line-height: 1.6;
+    background-position: 50% -0.5%;
+  }
+
+  /* HEADER */
+  header nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  /* MAIN */
+  main {
+    padding: 2em 2em;
+  }
+  /* ELEMENTI NEL MAIN - ARTICLE */
+  h1 {
+    font-size: 4.3rem;
+    line-height: 4.5rem;
+  }
+
+  article h2 {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+
+  iframe {
+    height: 160px;
+  }
+
+  /* TABELLE */
+  table {
+    margin-top: 4em;
+    margin-bottom: 6em;
+    margin-inline: auto;
+    font-size: 1.2rem;
+  }
+  th,
+  td {
+    padding: 12px 30px;
+  }
+
+  /* FORM */
+  input {
+    padding: 15px;
+    padding-right: 250px;
+  }
+  button {
+    padding: 15px 30px;
+  }
+
+  /* ELEMENTI NELL' ASIDE */
+  aside h2 {
+    font-size: 2.5rem;
+  }
+
+  aside a {
+    font-size: 1.3rem;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 1.5rem;
   }
 }

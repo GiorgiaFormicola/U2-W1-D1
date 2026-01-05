@@ -483,3 +483,43 @@ footer a {
     padding-inline: 17.5rem;
   }
 }
+
+/* PRINT STYLES */
+@media print {
+  /* IMPOSTAZIONI GENERALI */
+
+  html {
+    font-size: 100%;
+  }
+
+  body {
+    padding: 0px;
+  }
+
+  header,
+  iframe,
+  section,
+  aside,
+  footer {
+    display: none;
+  }
+
+  /* MAIN */
+
+  main,
+  article {
+    margin-bottom: 0;
+  }
+
+  /* ELEMENTI NEL MAIN - ARTICLE */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  /* TABELLE */
+
+  th {
+    color: black;
+    border-bottom: 1px solid #dddddd;
+  }
+}
